@@ -1,0 +1,188 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  background-image: url("https://media.giphy.com/media/55tAbmC1QDDpp8x774/giphy.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 3%;
+  height: 30em;
+  width: 85%;
+  margin: 5em;
+  opacity: 0.8;
+}
+
+.left-side {
+  border: 1px solid black;
+  height: 30em;
+  background-color: #b3b7ba;
+  border-radius: 10px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #b3b7ba;
+  border-radius: 10px;
+  font-family: "Concert One", cursive;
+}
+
+.body-grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 86%;
+}
+
+.sign-in-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: 800;
+  font-family: "Kaushan Script", cursive;
+  font-size: 1.4em;
+}
+
+.body-left {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 10px 10px 10px;
+  border-radius: 10px;
+  border-right: 1px solid;
+}
+
+.logo-one {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+.logo-two {
+  margin-top: 0.75em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+}
+
+.logged-status {
+  margin: 6em 10px 0 0;
+  border: 1px solid black;
+  background-color: #aa3f39;
+  padding: 10px;
+}
+
+.body-right {
+  display: grid;
+  margin: 10px;
+}
+
+.login-components {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-components input {
+  text-align: center;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  width: 90%;
+  height: 40%;
+  border-radius: 10px;
+  background-color: #7689a9;
+  font-weight: 800;
+  color: blue;
+  font-family: "Concert One", cursive;
+  font-size: 1.4em;
+}
+
+.login-components ::placeholder {
+  color: black;
+  font-family: "Concert One", cursive;
+}
+
+.btn-wrapper {
+  display: grid;
+  justify-items: right;
+  margin: 2em;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 50%;
+  height: 4em;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #c4e79a;
+  font-family: "Concert One", cursive;
+}
+
+.sign-out-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 50%;
+  height: 4em;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #aa3f39;
+  font-family: "Concert One", cursive;
+}
+
+.sign-up-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 4em;
+  width: 80%;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #669999;
+  font-family: "Concert One", cursive;
+}
+
+@media (max-width: 615px) {
+  .bottom-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .right-side {
+    margin-top: 1em;
+  }
+
+  .top-page-image {
+    display: none;
+  }
+}
